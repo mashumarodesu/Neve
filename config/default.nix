@@ -16,6 +16,7 @@
     ./sets
     ./snippets
     ./statusline
+    ./suda
     ./telescope
     ./ui
     ./utils
@@ -35,6 +36,7 @@
   pluginmanagers.enable = lib.mkDefault true;
   snippets.enable = lib.mkDefault true;
   statusline.enable = lib.mkDefault true;
+  suda.enable = lib.mkDefault true;
   telescope.enable = lib.mkDefault true;
   ui.enable = lib.mkDefault true;
   utils.enable = lib.mkDefault true;
