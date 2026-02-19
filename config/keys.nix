@@ -7,17 +7,14 @@
   config = lib.mkIf config.keys.enable {
     globals.mapleader = " ";
     keymaps = [
-      # Disable arrow keys
       {
         mode = [
           "n"
           "i"
         ];
         key = "<Up>";
-        action = "<Nop>";
+        action = "<C-j>";
         options = {
-          silent = true;
-          noremap = true;
           desc = "Disable Up arrow key";
         };
       }
@@ -27,10 +24,8 @@
           "i"
         ];
         key = "<Down>";
-        action = "<Nop>";
+        action = "<C-k>";
         options = {
-          silent = true;
-          noremap = true;
           desc = "Disable Down arrow key";
         };
       }
@@ -40,10 +35,8 @@
           "i"
         ];
         key = "<Right>";
-        action = "<Nop>";
+        action = "<C-l>";
         options = {
-          silent = true;
-          noremap = true;
           desc = "Disable Right arrow key";
         };
       }
@@ -53,10 +46,8 @@
           "i"
         ];
         key = "<Left>";
-        action = "<Nop>";
+        action = "<C-h>";
         options = {
-          silent = true;
-          noremap = true;
           desc = "Disable Left arrow key";
         };
       }
